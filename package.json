@@ -1,0 +1,28 @@
+{
+  "name": "@nx-js/observe-middleware",
+  "version": "1.0.0",
+  "description": "An NX middleware, responsible for reactivity and observables.",
+  "main": "observe.js",
+  "author": {
+    "name": "Miklos Bertalan",
+    "email": "miklos.bertalan@risingstack.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nx-js/observe-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nx-js/observe-middleware/issues"
+  },
+  "homepage": "http://nx-framework.com",
+  "license": "MIT",
+  "keywords": [
+    "nx",
+    "middleware",
+    "observe",
+    "observable"
+  ],
+  "dependencies": {
+    "@nx-js/observer-util": "^1.0.0"
+  }
+}
