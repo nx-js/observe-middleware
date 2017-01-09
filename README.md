@@ -8,7 +8,7 @@ The `observe` middleware wraps the state in an observable and handles observabil
 - processes: element and text nodes
 - throws on: nothing
 - use as: component or content middleware
-- [docs](http://nx-framework/docs/middlewares/observe)
+- [docs](http://nx-framework.com/docs/middlewares/observe)
 
 ## Installation
 
