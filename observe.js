@@ -7,8 +7,6 @@ function observe (node, state) {
   node.$state = observer.observable(node.$state)
 
   node.$observe = $observe
-  node.$queue = $queue
-  node.$unobserve = observer.unobserve
 }
 observe.$name = 'observe'
 module.exports = observe
@@ -16,11 +14,10 @@ module.exports = observe
 function $observe (fn, ...args) {
   args.unshift(fn, this)
   const signal = observer.observe.apply(null, args)
-  this.$cleanup(observer.unobserve, signal)
+  this.$cleanup(unobserve, signal)
   return signal
 }
 
-function $queue (fn, ...args) {
-  args.unshift(fn, this)
-  return observer.queue.apply(null, args)
+function unobserve (signal) {
+  signal.unobserve()
 }
