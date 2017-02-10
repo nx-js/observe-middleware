@@ -1,6 +1,6 @@
 {
   "name": "@nx-js/observe-middleware",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An NX middleware, responsible for reactivity and observables.",
   "main": "observe.js",
   "author": {
@@ -23,6 +23,6 @@
     "observable"
   ],
   "dependencies": {
-    "@nx-js/observer-util": "^1.0.0"
+    "@nx-js/observer-util": "^2.0.0"
   }
 }
